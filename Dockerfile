@@ -1,4 +1,4 @@
-FROM golang:1.18 AS build
+FROM golang:1.22 AS build
 
 RUN apt-get update -y && \
     apt-get install -y rsync
@@ -12,7 +12,7 @@ WORKDIR /app/avalanchego/
 RUN /app/avalanchego/scripts/build.sh
 
 
-FROM ubuntu@sha256:b25ef49a40b7797937d0d23eca3b0a41701af6757afca23d504d50826f0b37ce
+FROM ubuntu@jammy
 
 WORKDIR /app
 

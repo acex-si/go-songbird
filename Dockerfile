@@ -12,7 +12,7 @@ WORKDIR /app/avalanchego/
 RUN /app/avalanchego/scripts/build.sh
 
 
-FROM ubuntu@jammy
+FROM ubuntu:jammy
 
 WORKDIR /app
 

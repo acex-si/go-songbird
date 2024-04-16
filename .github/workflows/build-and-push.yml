@@ -4,6 +4,7 @@ name: container-images
 on:
   push:
     branches: [ "acex-test" ]
+  workflow_dispatch:      
 
 jobs:
   build-and-push:
